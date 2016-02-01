@@ -11,22 +11,21 @@ export function SearchPanelDirective(wikiSearch) {
         <h4>{{$index}}.</h4> {{result | json}}
       </div>
     `,
-    scope: {
-        creationDate: '='
-    },
-    link: function(scope, ele, attr) {
-      scope.search = {
-        term: ''
-      }
-
-      scope.startSearch = function() {
-        var searchResult = wikiSearch.search(scope.search.term);
-        searchResult.then(function(results) {
-          scope.search.results = results;
-        });
-      }
-    }
+    link: linkFn
   };
+
+  function linkFn(scope, ele, attr) {
+    scope.search = {
+      term: ''
+    }
+
+    scope.startSearch = function() {
+      var searchResult = wikiSearch.search(scope.search.term);
+      searchResult.then(function(results) {
+        scope.search.results = results;
+      });
+    }
+  }
 
   return directive;
 }

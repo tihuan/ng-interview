@@ -15,8 +15,6 @@ export class WikiSearch {
         format: 'json'
       }
     }).then(function(result) {
-      console.log('SEARCH result here:');
-      console.log(result);
       return result.data;
     });
   }
