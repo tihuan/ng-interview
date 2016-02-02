@@ -6,6 +6,7 @@ export class WikiSearch {
   }
 
   search(term) {
+    // this search function is incomplete
     return this.$http({
       url: 'http://en.wikipedia.org/w/api.php?&callback=JSON_CALLBACK',
       method: 'jsonp',
@@ -14,8 +15,6 @@ export class WikiSearch {
         search: term,
         format: 'json'
       }
-    }).then(function(result) {
-      return result.data;
-    });
+    })
   }
 }

@@ -1,30 +1,20 @@
-export function SearchPanelDirective(wikiSearch) {
+// 1. wikiSearch is the service you need
+// 2. create a search box that takes user input
+// 3. create a button that trigger wikiSearch
+// 4. bind search result in view and ng-repeat it
+// 5. use this to repeat result: <h4>{{$index}}.</h4> {{result | json}}
+export function SearchPanelDirective() {
   'ngInject';
 
   let directive = {
     restrict: 'E',
     template: `
       <h3>Search WikiPedia Here:</h3>
-      <input type="text" ng-model="search.term">
-      <button ng-click="startSearch()">Search</button>
-      <div ng-repeat="result in search.results">
-        <h4>{{$index}}.</h4> {{result | json}}
-      </div>
     `,
     link: linkFn
   };
 
   function linkFn(scope, ele, attr) {
-    scope.search = {
-      term: ''
-    }
-
-    scope.startSearch = function() {
-      var searchResult = wikiSearch.search(scope.search.term);
-      searchResult.then(function(results) {
-        scope.search.results = results;
-      });
-    }
   }
 
   return directive;
