@@ -1,5 +1,12 @@
 # ng-interview
-## This is the goal: ![Goal](https://www.evernote.com/shard/s112/sh/a9b9b27c-1558-4a95-87f1-10cc323d940c/d59d0b4be8145dd7/res/d1d6aac7-5aee-445d-a07e-62f3a6d7a001/skitch.png)
+## This is the goal:
+Implement a Wikipedia search feature in this Angular app.
+
+Ask the candidate to describe how they'd implement it.
+
+Ideally they should mention using a `service` to encapsulate the Wiki search function and inject it to the directive.
+
+![Goal](https://www.evernote.com/shard/s112/sh/a9b9b27c-1558-4a95-87f1-10cc323d940c/d59d0b4be8145dd7/res/d1d6aac7-5aee-445d-a07e-62f3a6d7a001/skitch.png)
 
 Step 0: Clone repo to local (`cd` to desired directory first): `git clone git@github.com:tihuan/ng-interview.git`
 
