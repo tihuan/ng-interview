@@ -12,8 +12,12 @@ Step 0: Clone repo to local (`cd` to desired directory first): `git clone git@gi
 
 Step 1: `cd ng-interview`
 
-Step 2: Open the following two files for the candidate to work on: `searchPanel.directive.js` and `wikiSearch.service.js`.
+Step 2: `npm install; bower install; gulp; gulp serve`
 
-Step 3: Pair program with the candidate and help them when necessary. Evaluate the candidate's web dev and communication skills along the way!
+Step 3: Open your favorite browser and go to url: `http://localhost:3000/`
+
+Step 3: Open the following two files for the candidate to work on: `searchPanel.directive.js` and `wikiSearch.service.js`.
+
+Step 4: Pair program with the candidate and help them when necessary. Evaluate the candidate's web dev and communication skills along the way!
 
 NOTE: branch `answer` has the answer, so please feel free to look at it before meeting candidates :)
