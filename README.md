@@ -20,4 +20,6 @@ Step 3: Open the following two files for the candidate to work on: `searchPanel.
 
 Step 4: Pair program with the candidate and help them when necessary. Evaluate the candidate's web dev and communication skills along the way!
 
+Step 5: Smile and have fun!
+
 NOTE: branch `answer` has the answer, so please feel free to look at it before meeting candidates :)
